@@ -1,12 +1,13 @@
-number1 = int(input())
-number2 = int(input())
+a = int(input())
+b = int(input())
 
 def gcd():
-    while(number1 != number2):
-        if(number1>number2):
-            number2 = number1 - number2
+    while(a != b):
+        if (a>b):
+            b = a - b
         else:
-            number1 = number2 - number1
-        print(number1)
+            a = b - a
+	return a
 
 #if __name__ == "__main__":
+
