@@ -1,14 +1,17 @@
-def gcd():
-    if (a != b):
+def gcd(c,d):
+    a=c
+    b=d
+    if (a!=b):
         if (a>b):
             b = a - b
+            return b
         else:
             a = b - a
-        return gcd()
+            #return gcd(a,b)
     else:
         return a
     
 if __name__ == "__main__":
     a = int(input())
     b = int(input())
-    gcd()
+    gcd(a,b)
